@@ -7,5 +7,5 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    return a.exec();
-}
+    w.setWindowTitle("BingWallpaperDownload V2.1");
+    return a.exec();}
