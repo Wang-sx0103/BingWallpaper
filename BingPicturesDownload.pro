@@ -29,7 +29,7 @@ TRANSLATIONS += \
     BingPicturesDownload_zh_CN.ts
 LIBS += -lurlmon
 RC_ICONS += Bing.ico
-VERSION = 2.1.0
+VERSION = 2.1.1
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
