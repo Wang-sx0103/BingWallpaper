@@ -41,7 +41,7 @@ void MainWindow::on_pushButton_clicked()
 
         if (QFile::copy(temFile,fileName)){
 
-            QMessageBox::information(this,"warning","下载完成",QMessageBox::Yes);
+            QMessageBox::information(this,"提示","下载完成!");//QMessageBox::Yes);
 
         }
 
