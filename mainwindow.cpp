@@ -6,21 +6,18 @@ QString MainWindow::temFile = "~BingWallpaper.tem";
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
+    , ui(new Ui::MainWindow){
     ui->setupUi(this);
     Init();
 
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow(){
     delete ui;
 }
 
 
-void MainWindow::on_pushButton_clicked()
-{
+void MainWindow::on_pushButton_clicked(){
     //文件夹路径
     QString srcDirPath = QFileDialog::getExistingDirectory(
                  this, "选择壁纸存储路径",
@@ -110,13 +107,3 @@ void MainWindow::doProcessFinish(){
     ui->label_2->show();//显示
 }
 //end SLOTS
-
-
-
-
-
-
-
-
-
-
